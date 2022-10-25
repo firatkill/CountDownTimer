@@ -4,7 +4,7 @@ function TimerBox(props) {
   const styled = TimerBoxCSS;
   const [time, setTime] = useState(props.time);
   const [isActive, setActive] = useState(false);
-  if (props.label === "SECONDS" && time !== props.time) {
+  if (time !== props.time) {
     setActive(true);
     setTimeout(() => {
       setActive(false);
